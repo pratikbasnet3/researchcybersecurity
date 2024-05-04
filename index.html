@@ -12,7 +12,11 @@
 <style>
 
 .contact-button{
- margin-left: 40px;
+ 
+}
+
+.home{
+  
 }
   #more {display: none;}
   .fa-instagram {
@@ -60,18 +64,24 @@ and is wrapped around the whole page content, except for the footer in this exam
 <header class="w3-container w3-center w3-padding-32">
   <div style="
     display: grid;
-    grid-template-columns: 800px 100px 100px;"> 
+    grid-template-columns: 900px 100px 100px 100px;"> 
     <div>
   <h1><b>Pratik Basnet</b></h1>
   <p>Welcome to my Website</p>
   </div>
   <div>
-    <button class="contact-button">
+    <button class="w3-button w3-padding-medium w3-white w3-border" class="home" 
+    onclick="openHomeButton()">
+      Home
+    </button>
+  </div>
+  <div>
+    <button class="w3-button w3-padding-medium w3-white w3-border" class="contact-button" onclick="openContactPage()">
       Contact
     </button>
   </div>
   <div>
-    <button class="contact-button">
+    <button class="w3-button w3-padding-medium w3-white w3-border" class="contact-button" onclick="openAboutButton">
     About
     </button>
   </div>
@@ -192,7 +202,17 @@ grid-template-columns: 1000px 50px 50px;">
     moreText.style.display = "inline";
   }
 }
+function openContactPage() {
+        window.location.href = "contact.html"; // Replace "contact.html" with the URL of your contact page
+    }
+   function openHomeButton() {
+    window.location.href = "homebutton.html";
+   }
+   function openAboutButton() {
+    window.location.href = "about.html"
+   }
 </script>
 
 </body>
 </html>
+
