@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.contact-button{
+ margin-left: 40px;
+}
+  #more {display: none;}
+  .fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa {
+  
+  padding: 20px;
+  
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  
+}
+
+  .cyberimage{
+    height: 250px;
+  }
+  .pratikphoto{
+    height: 150px;
+    border-radius: 40%;
+  }
+
+  .email{
+    margin-left: 100px;
+  }
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+
+
+<header class="w3-container w3-center w3-padding-32">
+  <div style="
+    display: grid;
+    grid-template-columns: 800px 100px 100px 100px;"> 
+    <div>
+  <h1><b>Pratik Basnet</b></h1>
+  <p>Welcome to my Website</p>
+  </div>
+  <div>
+    <button class="w3-button w3-padding-medium w3-white w3-border" onclick="openHomeButton()">
+      Home
+    </button>
+  </div>
+  <div>
+    <button class="w3-button w3-padding-medium w3-white w3-border" class="contact-button" onclick="openContactPage()">
+      Contact
+    </button>
+  </div>
+  <div>
+    <button class="w3-button w3-padding-medium w3-white w3-border" class="contact-button" onclick="openAboutButton()">
+    About
+    </button>
+  </div>
+  </div>
+</header>
+
+
+
+
+  
+ 
+  
+  
+
+
+<!-- Footer -->
+
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <div style="
+  display: grid;
+grid-template-columns:  50px 50px 400px;">
+
+  <div>
+    <a href="https://www.facebook.com/well.done.58511276" class="fa fa-facebook"></a>
+  </div>
+  <div>
+    <a href="https://www.instagram.com/thisispratikbasnet/" class="fa fa-instagram"></a>
+  </div>
+  <div>
+    <h5 class="email">Email: basnetpratik555@gmail.com
+      Phone: +977 9813804693
+    </h5>
+  </div>
+
+  </div>
+</footer>
+<script>
+  function openHomeButton() {
+    window.location.href = "homebutton.html";
+  }
+  function openAboutButton() {
+    window.location.href = "about.html";
+  }
+  function openContactPage() {
+    window.location.href = "contact.html";
+  }
+</script>
+
+
+</body>
+</html>
