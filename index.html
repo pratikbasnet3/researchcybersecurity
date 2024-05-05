@@ -14,10 +14,10 @@
   }
   
   /* Media query for smartphones */
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 480px) {
     /* Adjust font sizes for better readability on smaller screens */
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     /* Make images responsive */
@@ -145,7 +145,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="myFunction()" id="myBtn"><b>READ MORE »</b></button></p>
+          <p><button  class="w3-button w3-padding-large w3-white w3-border" onclick="myFunction()" id="myBtn"><b>READ MORE »</b></button></p>
         </div>
         
       </div>
@@ -186,7 +186,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 grid-template-columns: 1000px 50px 50px;">
 <div>
   <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="openNextPage()">Next »</button>
   <p>&copy; 2024 Pratik Basnet. All Rights Reserved.</p>
   </div>
   <div>
@@ -224,6 +224,10 @@ function openContactPage() {
    function openAboutButton() {
     window.location.href = "about.html";
    }
+   function openNextPage() {
+    window.location.href = "next.html";
+   }
+   
 </script>
 
 </body>
