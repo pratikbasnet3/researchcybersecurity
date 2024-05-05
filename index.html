@@ -4,11 +4,15 @@
 <title>Pratik Basnet</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+  /* General styles */
+  body, h1, h2, h3, h4, h5 {
+    font-family: "Raleway", sans-serif;
+  }
+  
   /* Media query for smartphones */
   @media only screen and (max-width: 576px) {
     /* Adjust font sizes for better readability on smaller screens */
@@ -22,181 +26,121 @@
         height: auto;
     }
   }
-  #more {display: none;}
+
+  /* Styles for social media icons */
+  .fa {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
   .fa-instagram {
-  background: #125688;
-  color: white;
-}
-.fa {
-  
-  padding: 20px;
-  
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-  
-}
-
-  .cyberimage{
-    height: 250px;
+    background: #125688;
+    color: white;
   }
-  .pratikphoto{
+  
+  /* Pratik's photo styles */
+  .pratikphoto {
     height: 150px;
-    border-radius: 40%;
+    border-radius: 50%;
   }
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
 </head>
 <body class="w3-light-grey">
 
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
-
 <!-- Header -->
-
-
 <header class="w3-container w3-center w3-padding-32">
-  <div style="
-    display: grid;
-    grid-template-columns: 900px 100px 100px 100px;"> 
-    <div>
-  <h1><b>Pratik Basnet</b></h1>
-  <p>Welcome to my Website</p>
-  </div>
-  <div>
-    <button class="w3-button w3-padding-medium w3-white w3-border" class="home" 
-    onclick="openHomeButton()">
-      Home
-    </button>
-  </div>
-  <div>
-    <button class="w3-button w3-padding-medium w3-white w3-border" class="contact-button" onclick="openContactPage()">
-      Contact
-    </button>
-  </div>
-  <div>
-    <button class="w3-button w3-padding-medium w3-white w3-border" class="contact-button" onclick="openAboutButton()">
-    About
-    </button>
-  </div>
+  <div class="w3-row">
+    <div class="w3-col">
+      <h1><b>Pratik Basnet</b></h1>
+      <p>Welcome to my Website</p>
+    </div>
+    <div class="w3-col">
+      <button class="w3-button w3-padding-medium w3-white w3-border home" onclick="openHomeButton()">Home</button>
+    </div>
+    <div class="w3-col">
+      <button class="w3-button w3-padding-medium w3-white w3-border contact-button" onclick="openContactPage()">Contact</button>
+    </div>
+    <div class="w3-col">
+      <button class="w3-button w3-padding-medium w3-white w3-border contact-button" onclick="openAboutButton()">About</button>
+    </div>
   </div>
 </header>
 
-
-
-<!-- Grid -->
-<div class="w3-row">
-
 <!-- Blog entries -->
-<div class="w3-col l8 s12">
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img class="cyberimage" src="cyber.jpeg" alt="Nature" style="width: 100%">
-    <div class="w3-container">
-      <h3><b>CYBERSECURITY IN NEPAL</b></h3>
-      <h5>Pratik Basnet,
-         <span class="w3-opacity"></span> <span class="w3-opacity">Jan 7, 2024</span></h5>
+<div class="w3-content" style="max-width:1400px">
+  <div class="w3-row">
+    <div class="w3-col l8 s12">
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <img class="cyberimage" src="cyber.jpeg" alt="Nature" style="width: 100%">
+        <div class="w3-container">
+          <h3><b>CYBERSECURITY IN NEPAL</b></h3>
+          <h5>Pratik Basnet, <span class="w3-opacity">Jan 7, 2024</span></h5>
+        </div>
+        <div class="w3-container">
+          <p><b>Abstract:</b> (Your abstract here)</p>
+          <p id="more"> <b>Introduction:</b> (Your introduction here)</p>
+          <button class="w3-button w3-padding-large w3-white w3-border" onclick="myFunction()" id="myBtn"><b>READ MORE »</b></button>
+        </div>
+      </div>
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container">
+          <h3><b>BLOG ENTRY</b></h3>
+          <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+        </div>
+        <div class="w3-container">
+          <p>(Your blog entry content here)</p>
+          <button class="w3-button w3-padding-large w3-white w3-border" onclick="myFunction()" id="myBtn"><b>READ MORE »</b></button>
+        </div>
+      </div>
     </div>
-
-    <div class="w3-container">
-      <p><b>Abstract:</b>
-        In this world that is run by technology and network connections, it is very important to know what cybersecurity is, and how to use it effectively. Systems, important data, files, and other important virtual things are at risk if there is no security to protect it. Whether it’s a small or large organization, protecting their data is very important. With this advancement in technology, attackers are also being advanced. They are consuming better and enhanced hacking techniques and aim the weak points of many businesses out there. Especially in the context of Nepal, the lack of awareness about the importance of cybersecurity measures and the safe the internet practices among the internet users presents a huge concern for the organizations as well as the government ensuring the digital security of individuals and entities in Nepal. This paper mainly focuses on the history, challenges, and the scope of cybersecurity in Nepal. It also focuses on the cybersecurity techniques and its importance.
-        <span id="dots">...</span><span id="more"> <br><br><br>
-          <b>Introduction</b> <br>
-          Today, people can share messages, photos to anyone sitting at any corner of the world by just one click. That’s the blessings of technology. In this world, from education to health, agriculture to business, everywhere technologies and internet is used. We can’t even imagine a month without internet. I remember, for 10 hours Nepal didn’t receive internet service due to unpaid fees by ISPs in Nepal. Everything got messed up, this illustrated our dependence on this technology and highlighted the vulnerabilities within our infrastructure. <br> <br>
-          Today 51% of people in Nepal use internet that’s approximately 10 million people. And how many of them know about the importance of cybersecurity? The answer is not even 500 thousand. Moreover, large institutions holding vast amounts of private and sensitive data often fail to prioritize cybersecurity education for their users and consumers. Consequently, individuals are ill-prepared to protect themselves against cybercrimes, and organizations are left vulnerable to attacks. People face these problems and they ignore because they don’t know how to respond to cyber incidents. <br><br> 
-          The result of inadequate cybersecurity measures are evident in the frequent incidents of data breaches and hacking affecting top-level educational and financial institutions in Nepal. The Cybersecurity Bureau of Nepal reports that a significant portion, 35%, of cyber cases remain unresolved due to the shortage of cybersecurity professionals in the country. To address these challenges, Nepal must prioritize the implementation of robust cybersecurity measures. This entails not only raising awareness among the general populace but also investing in training programs to cultivate a skilled workforce capable of safeguarding our digital infrastructure.
-          </span>
-        </p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button
-             class="w3-button w3-padding-large w3-white w3-border" onclick="myFunction()" id="myBtn"><b>READ MORE »</b></button></p>
+    <!-- Introduction menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-card w3-margin w3-margin-top">
+        <img class="pratikphoto" src="pratik.jpeg">
+        <div class="w3-container w3-white">
+          <h4><b>Pratik Basnet</b></h4>
+          <p>My name is Pratik Basnet. I am from Jhapa, Nepal. Here are some of my research papers.</p>
         </div>
       </div>
     </div>
   </div>
-  <hr>
-
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>BLOG ENTRY</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="myFunction()" id="myBtn"><b>READ MORE »</b></button></p>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-<!-- END BLOG ENTRIES -->
-</div>
-
-<!-- Introduction menu -->
-<div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
-  <img class="pratikphoto" src="pratik.jpeg">
-    <div class="w3-container w3-white">
-      <h4><b>Pratik Basnet</b></h4>
-      <p>My name is Pratik Basnet. I am from Jhapa, Nepal. Here are some of my research papers.</p>
-    </div>
-  </div><hr>
-  
-  
- 
-  
-  
-<!-- END Introduction Menu -->
-</div>
-
-<!-- END GRID -->
-</div><br>
-
-<!-- END w3-content -->
 </div>
 
 <!-- Footer -->
-
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <div style="
-  display: grid;
-grid-template-columns: 1000px 50px 50px;">
-<div>
-  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
-  <p>&copy; 2024 Pratik Basnet. All Rights Reserved.</p>
-  </div>
-  <div>
-    <a href="https://www.facebook.com/well.done.58511276" class="fa fa-facebook"></a>
-  </div>
-  <div>
-    <a href="https://www.instagram.com/thisispratikbasnet/" class="fa fa-instagram"></a>
-  </div>
-
+  <div class="w3-row">
+    <div class="w3-col">
+      <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+      <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+      <p>&copy; 2024 Pratik Basnet. All Rights Reserved.</p>
+    </div>
+    <div class="w3-col">
+      <a href="https://www.facebook.com/well.done.58511276" class="fa fa-facebook"></a>
+    </div>
+    <div class="w3-col">
+      <a href="https://www.instagram.com/thisispratikbasnet/" class="fa fa-instagram"></a>
+    </div>
   </div>
 </footer>
 
 <script>
- function myFunction() {
+function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
@@ -211,15 +155,18 @@ grid-template-columns: 1000px 50px 50px;">
     moreText.style.display = "inline";
   }
 }
+
 function openContactPage() {
-        window.location.href = "contact.html"; // Replace "contact.html" with the URL of your contact page
-    }
-   function openHomeButton() {
+    window.location.href = "contact.html"; // Replace "contact.html" with the URL of your contact page
+}
+
+function openHomeButton() {
     window.location.href = "homebutton.html";
-   }
-   function openAboutButton() {
+}
+
+function openAboutButton() {
     window.location.href = "about.html";
-   }
+}
 </script>
 
 </body>
