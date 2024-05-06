@@ -33,10 +33,10 @@
   }
   #more {display: none;}
   .fa-instagram {
-  background: #125688;
+  
   color: white;
 }
-.fa {
+.fas {
   
   padding: 20px;
   
@@ -45,11 +45,11 @@
   margin: 5px 2px;
 }
 
-.fa:hover {
+.fas:hover {
     opacity: 0.7;
 }
 
-.fa-facebook {
+.fas-facebook {
   background: #3B5998;
   color: white;
   
@@ -63,9 +63,62 @@
     border-radius: 40%;
   }
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.home{
+  margin-top: 2px;
+  height: 35px;
+  margin-left: 4px;
+  width: 100px;
+  color: white;
+  height: 35px;
+  background-color: black;
+  border: none;
+  
+  
+}
+.home:hover{
+  color: black;
+  background-color: white;
+}
+.homeabout{
+margin-left: 290px;
+height: 35px;
+color: white;
+background-color: black;
+border: none;
+width: 100px;
+margin-top: 2px;
+}
+.homeabout:hover{
+  color: black;
+  background-color: white;
+}
+
 </style>
 </head>
 <body class="w3-light-grey">
+
+
+
+  <div class="w3-bar w3-black w3-hide-small">
+    <a href="https://www.facebook.com/well.done.58511276" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/thisispratikbasnet/" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+    <button class="homeabout"
+    onclick="openHomeButton()">
+      Home
+    </button>
+    <button class="home" onclick="openAboutButton()">
+      About
+      </button>
+    <button  class="home" onclick="openContactPage()">
+      Contact
+    </button>
+    
+    
+  </div>
+  
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -75,29 +128,11 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
 <header class="w3-container w3-center w3-padding-32">
-  <div style="
-    display: grid;
-    grid-template-columns: 900px 100px 100px 100px;"> 
-    <div class="intro">
+ 
   <h1><b>Pratik Basnet</b></h1>
   <p>Welcome to my Website</p>
   </div>
-  <div>
-    <button class="w3-button w3-padding-medium w3-white w3-border" class="home" 
-    onclick="openHomeButton()">
-      Home
-    </button>
-  </div>
-  <div>
-    <button class="w3-button w3-padding-medium w3-white w3-border" class="contact-button" onclick="openContactPage()">
-      Contact
-    </button>
-  </div>
-  <div>
-    <button class="w3-button w3-padding-medium w3-white w3-border" class="contact-button" onclick="openAboutButton()">
-    About
-    </button>
-  </div>
+  
   </div>
 </header>
 
@@ -119,18 +154,19 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <p><b>Abstract:</b>
-       In this world that is run by technology and network connections, it is very important to know what cybersecurity is, and how to use it effectively. Systems, important data, files, and other important virtual things are at risk if there is no security to protect them. Whether it’s a small or large organization, protecting their data is very important. With this advancement in technology, attackers are also being advanced. They are consuming better and enhanced hacking techniques and aim at the weak points of many businesses out there. Especially in the context of Nepal, the lack of awareness about the importance of cybersecurity measures and safe internet practices among internet users presents a huge concern for the organizations as well as the government ensuring the digital security of individuals and entities in Nepal. This paper mainly focuses on the history, challenges, and scope of cybersecurity in Nepal. It also focuses on the cybersecurity techniques and its importance.
+        In this world that is run by technology and network connections, it is very important to know what cybersecurity is and how to use it effectively. Systems, important data, files, and other vital virtual assets are at risk if there is no security to protect them. Whether it’s a small or large organization, protecting their data is crucial. With advancements in technology, attackers are also becoming more sophisticated. They are employing better and enhanced hacking techniques and targeting the weak points of many businesses out there. Especially in the context of Nepal, the lack of awareness about the importance of cybersecurity measures and safe internet practices among internet users presents a significant concern for organizations as well as the government in ensuring the digital security of individuals and entities in Nepal. This paper mainly focuses on the history, challenges, and scope of cybersecurity in Nepal. It also highlights cybersecurity techniques and their importance.
         <span id="dots">...</span><span id="more"> <br><br><br>
           <b>Introduction</b> <br>
-       Today, people can share messages, photos with anyone sitting in any corner of the world with just one click. That’s the blessing of technology. In this world, from education to health, agriculture to business, everywhere technologies and the internet are used. We can’t even imagine a month without the Internet. I remember, for 10 hours Nepal didn’t receive internet service due to unpaid fees by ISPs in Nepal. Everything got messed up, this illustrated our dependence on this technology and highlighted the vulnerabilities within our infrastructure. <br> <br>
-       Today 51% of people in Nepal use the internet that’s approximately 10 million people. And how many of them know about the importance of cybersecurity? The answer is not even 500 thousand. Moreover, large institutions holding vast amounts of private and sensitive data often fail to prioritize cybersecurity education for their users and consumers. Consequently, individuals are ill-prepared to protect themselves against cybercrimes, and organizations are left vulnerable to attacks. People face these problems and they ignore them because they don’t know how to respond to cyber incidents. <br><br> 
-       The result of inadequate cybersecurity measures is evident in the frequent incidents of data breaches and hacking affecting top-level educational and financial institutions in Nepal. The Cybersecurity Bureau of Nepal reports that a significant portion, 35%, of cyber cases remain unresolved due to the shortage of cybersecurity professionals in the country. Due to these problems, we lie in 94th position in the National Cyber Security Index. To address these challenges, Nepal must prioritize the implementation of robust cybersecurity measures. This entails not only raising awareness among the general populace but also investing in training programs to cultivate a skilled workforce capable of safeguarding our digital infrastructure. ><br><br>
+          Today, people can share messages, photos with anyone sitting at any corner of the world with just one click. That’s the blessings of technology. In this world, from education to health, agriculture to business, everywhere technology and the internet are used. We can’t even imagine a month without the internet. I remember, for 10 hours Nepal didn’t receive internet service due to unpaid fees by ISPs in Nepal. Everything got messed up; this illustrated our dependence on this technology and highlighted the vulnerabilities within our infrastructure.<br> <br>
+          Today, 51% of people in Nepal use the internet, which is approximately 10 million people. And how many of them know about the importance of cybersecurity? The answer is not even 500 thousand. Moreover, large institutions holding vast amounts of private and sensitive data often fail to prioritize cybersecurity education for their users and consumers. Consequently, individuals are ill-prepared to protect themselves against cybercrimes, and organizations are left vulnerable to attacks. People face these problems, and they ignore them because they don’t know how to respond to cyber incidents.<br><br> 
+          The result of inadequate cybersecurity measures is evident in the frequent incidents of data breaches and hacking affecting top-level educational and financial institutions in Nepal. The Cybersecurity Bureau of Nepal reports that a significant portion, 35%, of cyber cases remain unresolved due to the shortage of cybersecurity professionals in the country. Due to these problems, we lie at the 94th position in the National Cyber Security Index. To address these challenges, Nepal must prioritize the implementation of robust cybersecurity measures. This entails not only raising awareness among the general populace but also investing in training programs to cultivate a skilled workforce capable of safeguarding our digital infrastructure. ><br><br>
           <b>History</b><br>
-       In the early 2000s, internet access began spreading across Nepal, primarily in urban areas. During this period, cybersecurity was a relatively unknown concept, with limited infrastructure and expertise in place to manage cyber threats. The government's focus at that time was more on expanding digital access than on securing it. <br> <br>
-        By the mid-2000s, as the number of internet users in Nepal continued to grow, the incidence of cybercrimes started to become more visible. Initial cases often involved scams, hacking of social media accounts, and the spread of computer viruses. These issues highlighted the need for a robust cybersecurity framework, but comprehensive measures were slow to develop. <br> <br>
-        The turning point for cybersecurity in Nepal came with the formulation of the Electronic Transaction Act (ETA) in 2004, which was one of the first attempts to address the legal aspects of cybercrimes. The Act provided a basic legal framework to tackle issues such as hacking, unauthorized data access, and electronic fraud. However, the rapid evolution of cyber threats soon outpaced the measures laid out in the ETA, necessitating further revisions and updates.
-        In response to growing cybersecurity challenges, the government established the Computer Emergency Response Team (NPCERT) in 2010. NPCERT was tasked with handling cybersecurity threats and enhancing the nation's cyber defense capabilities. Despite these efforts, a lack of comprehensive strategy and resource allocation meant that progress was gradual.
-</span>
+          In the early 2000s, internet access began spreading across Nepal, primarily in urban areas. During this period, cybersecurity was a relatively unknown concept, with limited infrastructure and expertise in place to manage cyber threats. The government's focus at that time was more on expanding digital access than on securing it.<br> <br>
+          By the mid-2000s, as the number of internet users in Nepal continued to grow, the incidence of cybercrimes started to become more visible. Initial cases often involved scams, hacking of social media accounts, and the spread of computer viruses. These issues highlighted the need for a robust cybersecurity framework, but comprehensive measures were slow to develop.<br> <br>
+          The turning point for cybersecurity in Nepal came with the formulation of the Electronic Transaction Act (ETA) in 2004, which was one of the first attempts to address the legal aspects of cybercrimes. The Act provided a basic legal framework to tackle issues such as hacking, unauthorized data access, and electronic fraud. However, the rapid evolution of cyber threats soon outpaced the measures laid out in the ETA, necessitating further revisions and updates.<br><br>
+
+          In response to growing cybersecurity challenges, the government established the Computer Emergency Response Team (NPCERT) in 2010. NPCERT was tasked with handling cybersecurity threats and enhancing the nation's cyber defense capabilities. Despite these efforts, a lack of comprehensive strategy and resource allocation meant that progress was gradual.
+</span> 
         </p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
@@ -191,20 +227,11 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Footer -->
 
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <div style="
-  display: grid;
-grid-template-columns: 1000px 50px 50px;">
-<div>
+  
   <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="openNextPage()">Next »</button>
   <p>&copy; 2024 Pratik Basnet. All Rights Reserved.</p>
-  </div>
-  <div>
-    <a href="https://www.facebook.com/well.done.58511276" class="fa fa-facebook"></a>
-  </div>
-  <div>
-    <a href="https://www.instagram.com/thisispratikbasnet/" class="fa fa-instagram"></a>
-  </div>
+ 
 
   </div>
 </footer>
