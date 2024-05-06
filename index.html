@@ -63,9 +63,23 @@
     border-radius: 40%;
   }
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.home{
+  margin-top: 4px;
+  height: 30px;
+  
+  
+}
+.homeabout{
+margin-left: 800px;
+height: 30px;
+color: black;
+}
+
 </style>
 </head>
 <body class="w3-light-grey">
+
+
 
   <div class="w3-bar w3-black w3-hide-small">
     <a href="https://www.facebook.com/well.done.58511276" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
@@ -73,6 +87,18 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
     <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+    <button class="homeabout"
+    onclick="openHomeButton()">
+      Home
+    </button>
+    <button class="home" onclick="openAboutButton()">
+      About
+      </button>
+    <button  class="home" onclick="openContactPage()">
+      Contact
+    </button>
+    
+    
   </div>
   
 
@@ -84,29 +110,11 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
 <header class="w3-container w3-center w3-padding-32">
-  <div style="
-    display: grid;
-    grid-template-columns: 900px 100px 100px 100px;"> 
-    <div class="intro">
+ 
   <h1><b>Pratik Basnet</b></h1>
   <p>Welcome to my Website</p>
   </div>
-  <div>
-    <button class="w3-button w3-padding-medium w3-white w3-border" class="home" 
-    onclick="openHomeButton()">
-      Home
-    </button>
-  </div>
-  <div>
-    <button class="w3-button w3-padding-medium w3-white w3-border" class="contact-button" onclick="openContactPage()">
-      Contact
-    </button>
-  </div>
-  <div>
-    <button class="w3-button w3-padding-medium w3-white w3-border" class="contact-button" onclick="openAboutButton()">
-    About
-    </button>
-  </div>
+  
   </div>
 </header>
 
